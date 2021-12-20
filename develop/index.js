@@ -1,4 +1,12 @@
 // TODO: Include packages needed for this application
+//outside packages
+const inquirer = require('inquirer');
+const fs = require('fs');
+const util = require('util');
+
+//direct packages
+const api = require('./utils/api.js');
+const generateMarkdown = require('./utils/generateMarkdown.js');
 
 // TODO: Create an array of questions for user input
 const questions = [
@@ -107,10 +115,34 @@ const questions = [
     ];
 
 // TODO: Create a function to write README file
-function writeToFile(fileName, data) {}
+function writeToFile(fileName, data) {
+    fs.writeFile(fileName, data, err => {
+        if (err) {
+          return console.log(err);
+        }
+      
+        console.log("Congratulations! Your README.md file has been created!")
+    });
+}
 
 // TODO: Create a function to initialize app
-function init() {}
+//referenced the following link to create an ASYNC function and how to format code to simplify it https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/async_function
+async function init() {
+    //https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/try...catch
+    try {
+
+        //Inquirer questions- using await via https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/await
+        const userResponses = await inquirer.prompt(questions);
+        console.log("Response Confirmations: ", userResponses);
+        console.log("Thank for your inputted responses!");
+    
+        //Call Created to fetch information from Github API for user information
+        const userInfo = await api.getUser(userResponses);
+        console.log("Your GitHub user info: ", userInfo);
+    } catch (error) {
+        console.log(error)
+    }
+};
 
 // Function call to initialize app
 init();
