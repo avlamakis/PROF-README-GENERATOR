@@ -139,10 +139,19 @@ async function init() {
         //Call Created to fetch information from Github API for user information
         const userInfo = await api.getUser(userResponses);
         console.log("Your GitHub user info: ", userInfo);
+
+        //utilized api to console log the markdown with responses
+        const markdown = generateMarkdown(userResponses, userInfo);
+        console.log(markdown);
+    
+        //wrote file to complete markdown to with await 
+        await writeFileAsync('ExampleREADME.md', markdown);
+
     } catch (error) {
-        console.log(error)
+        console.log(error);
     }
 };
+
 
 // Function call to initialize app
 init();
