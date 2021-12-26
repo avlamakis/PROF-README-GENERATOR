@@ -1,12 +1,10 @@
 // TODO: Include packages needed for this application
-//outside packages
+//outside packages and direct packages
 const inquirer = require('inquirer');
 const fs = require('fs');
 const util = require('util');
-
-//direct packages
-const api = require('./utils/api.js');
 const generateMarkdown = require('./utils/generateMarkdown.js');
+
 
 // TODO: Create an array of questions for user input
 const questions = [
@@ -115,14 +113,13 @@ const questions = [
     ];
 
 // TODO: Create a function to write README file
+// this is an await in the async function
 function writeToFile(fileName, data) {
-    fs.writeFile(fileName, data, err => {
-        if (err) {
-          return console.log(err);
-        }
-      
-        console.log("Congratulations! Your README.md file has been created!")
-    });
+  fs.writeFile(fileName, data, error => {
+    if (error) {
+      return console.log('Sorry there was a unexpected error: ' + error);
+    }
+  })
 }
 
 // TODO: Create a function to initialize app
@@ -133,25 +130,22 @@ async function init() {
 
         //Inquirer questions- using await via https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/await
         const userResponses = await inquirer.prompt(questions);
-        console.log("Response Confirmations: ", userResponses);
-        console.log("Thank for your inputted responses!");
+        console.log('Thank you! The information you have inputted is now being formatted into your README.md: ', userResponses);
+        // get markdown template from generateMarkdown.js passing the answers as parameter
+        const myMarkdown = generateMarkdown(userResponses);
+        console.log(myMarkdown);
     
-        //Call Created to fetch information from Github API for user information
-        const userInfo = await api.getUser(userResponses);
-        console.log("Your GitHub user info: ", userInfo);
-
         //utilized api to console log the markdown with responses
-        const markdown = generateMarkdown(userResponses, userInfo);
+        const markdown = generateMarkdown(userResponses);
         console.log(markdown);
     
         //wrote file to complete markdown to with await 
-        await writeFileAsync('ExampleREADME.md', markdown);
+        await createReadMe('README1.md', myMarkdown);
 
     } catch (error) {
-        console.log(error);
+        console.log('Apologize for the inconvenience as an error occurred.' + error);
     }
 };
-
 
 // Function call to initialize app
 init();
