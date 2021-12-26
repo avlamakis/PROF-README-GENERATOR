@@ -49,7 +49,7 @@ const questions = [
       },
       {
         type: 'input',
-        name: 'Description',
+        name: 'description',
         message: 'Enter a description about your project (Required)',
         validate: descriptionInput => {
           if (descriptionInput) {
@@ -101,12 +101,25 @@ const questions = [
       },
       {
         type: 'input',
-        name: 'tests',
+        name: 'email',
+        message: 'What is your email address? (Required)',
+        validate: nameInput => {
+          if (nameInput) {
+            return true;
+          } else {
+            console.log('Please enter your email.');
+            return false;
+          }
+        }
+      },
+      {
+        type: 'input',
+        name: 'testing',
         message: "If applicable, provide any tests written for your application and provide examples on how to run them."
     },
       {
         type: 'checkbox',
-        name: 'licenses',
+        name: 'licensing',
         message: 'What licenses is your project covered under? (Check all that apply)',
         choices: ['GNU AGPLv3', 'GNU GPLv3', 'GNU LGPLv3', 'Mozilla Public License 2.0', 'Apache License 2.0', 'MIT License', 'Boost Software License 1.0', 'The Unlicense']
       }
@@ -122,6 +135,7 @@ function writeToFile(fileName, data) {
   })
 }
 
+const createReadMe = util.promisify(writeToFile);
 // TODO: Create a function to initialize app
 //referenced the following link to create an ASYNC function and how to format code to simplify it https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/async_function
 async function init() {

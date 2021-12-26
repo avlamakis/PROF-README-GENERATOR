@@ -21,8 +21,6 @@ function generateMarkdown(data) {
   return `# ${data.title}
   
   ## Licensing
-      
-  _This application has the ${data.licensing}._
   [![license](https://img.shields.io/badge/license-${data.licensing}-blue)](https://shields.io)
 
   ## Table of Contents 
@@ -32,18 +30,25 @@ function generateMarkdown(data) {
   - [Contribution](#contribution)
   - [Testing](#testing)
   - [Additional Info](#additional-info)
+
   ## Description:
   ${data.description}
+
   ## Installation:
   ${data.installation}
+
   ## Usage:
   ${data.usage}
+
   ## License:
   ${data.licensing}
+
   ## Contribution:
-  ${data.contribution}
+  ${data.contributing}
+
   ## Testing:
   ${data.testing}
+
   ## Additional Info:
   - Github: [${data.github}](https://github.com/${data.github})
   - Email: ${data.email}
