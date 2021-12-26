@@ -88,7 +88,7 @@ const questions = [
       },
       {
         type: 'input',
-        name: 'contributing',
+        name: 'contribution',
         message: 'Who contributed to the creation of the project? (Required)',
         validate: contributingInput => {
           if (contributingInput) {
@@ -121,7 +121,7 @@ const questions = [
         type: 'checkbox',
         name: 'licensing',
         message: 'What licenses is your project covered under? (Check all that apply)',
-        choices: ['GNU AGPLv3', 'GNU GPLv3', 'GNU LGPLv3', 'Mozilla Public License 2.0', 'Apache License 2.0', 'MIT License', 'Boost Software License 1.0', 'The Unlicense']
+        choices: ['Apache', 'MIT', 'Mozilla-Public', 'GNU-General-Public', 'Common-Development-and Distribution', 'None'],
       }
     ];
 
