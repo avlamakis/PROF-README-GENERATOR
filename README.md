@@ -4,12 +4,12 @@
 badge
 
 ## Table of Contents
-  Description
-  Installation
-  Usage
-  Contribution
-  Testing
-  Additional Info
+  - [Description](#description)
+  - [Installation](#installation)
+  - [Usage](#usage)
+  - [Contribution](#contribution)
+  - [Testing](#testing)
+  - [Additional Info](#additional-info)
   
 ## Description:
 A Command-line application which generates a README file for your application repositories stored on GITHUB. The ReadMe helps others understand how the app functions, required installs, and how other developers can contribute to it.
