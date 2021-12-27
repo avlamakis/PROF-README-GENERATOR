@@ -24,7 +24,7 @@ const questions = [
       {
         type: 'input',
         name: 'github',
-        message: 'What is your github username? (Required)',
+        message: 'What is your github username? Please provide link to your profile (Required)',
         validate: githubInput => {
           if (githubInput) {
             return true;

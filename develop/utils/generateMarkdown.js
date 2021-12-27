@@ -9,6 +9,9 @@ function generateMarkdown(data) {
   ## Licensing
   ![badge](https://img.shields.io/badge/license-${data.licensing}-brightorange)
 
+  [https://choosealicense.com/](https://choosealicense.com/)
+
+
   ## Table of Contents 
   - [Description](#description)
   - [Installation](#installation)
@@ -35,7 +38,7 @@ function generateMarkdown(data) {
   ## Testing:
   ${data.testing}
 
-  ## Additional Info:
+  ## Questions:
   - Github: [${data.github}](https://github.com/${data.github})
   - Email: ${data.email}
 `;

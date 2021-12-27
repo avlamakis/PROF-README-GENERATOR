@@ -3,13 +3,16 @@
   ## Licensing
   ![badge](https://img.shields.io/badge/license-MIT-brightorange)
 
+  [https://choosealicense.com/](https://choosealicense.com/)
+
+
   ## Table of Contents 
   - [Description](#description)
   - [Installation](#installation)
   - [Usage](#usage)
   - [Contribution](#contribution)
   - [Testing](#testing)
-  - [Additional Info](#additional-info)
+  - [Questions](#questions)
 
   ## Description:
   A Command-line application which generates a README file for your application repositories stored on GITHUB. The ReadMe helps others understand how the app functions, required installs, and how other developers can contribute to it. 
@@ -29,6 +32,6 @@
   ## Testing:
   N/A
 
-  ## Additional Info:
+  ## Questions:
   - Github: [avlamakis](https://github.com/avlamakis)
   - Email: alexvlamakis@gmail.com
