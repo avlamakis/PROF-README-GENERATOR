@@ -45,6 +45,6 @@ https://choosealicense.com/
 N/A
 
 ## Questions:
-Github: avlamakis
+Github: https://github.com/avlamakis
 
 Email: alexvlamakis@gmail.com
