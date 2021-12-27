@@ -1,12 +1,9 @@
-# PROF-README-GENERATOR
+# ReadMe Generator
 
-C:\Users\bumbd\desktop\prof-readme-generator\develop\README1.md
-
-## ReadMe Generator
-### Licensing
+## Licensing
 badge
 
-### Table of Contents
+## Table of Contents
   Description
   Installation
   Usage
@@ -14,19 +11,19 @@ badge
   Testing
   Additional Info
   
-### Description:
+## Description:
 A Command-line application which generates a README file for your application repositories stored on GITHUB. The ReadMe helps others understand how the app functions, required installs, and how other developers can contribute to it.
 
-### Installation:
+## Installation:
 To install this app you will need to run NPM install for the following dependencies in your CLI: Inqurirer,fs, and util. This will allow the question prompts from the CLI for you to generate the README.MD file.
 
-### Usage:
+## Usage:
 https://watch.screencastify.com/v/Fth9K32Cunr2beXSAFWx
 
-### License:
+## License:
 MIT
 
-### Contribution:
+## Contribution:
 Made by myself Alexandros Vlamakis. 
 Utilized the following links/sources for assistance:
 //https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/try...catch 
@@ -37,9 +34,9 @@ https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/asy
 
 https://choosealicense.com/
 
-### Testing:
+## Testing:
 N/A
 
-### Additional Info:
+## Additional Info:
 Github: avlamakis
 Email: alexvlamakis@gmail.com
