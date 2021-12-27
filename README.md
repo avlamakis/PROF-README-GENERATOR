@@ -17,7 +17,7 @@
 A Command-line application which generates a README file for your application repositories stored on GITHUB. The ReadMe helps others understand how the app functions, required installs, and how other developers can contribute to it.
 
 ## Installation:
-To install this app you will need to run NPM install for the following dependencies in your CLI: Inqurirer,fs, and util. This will allow the question prompts from the CLI for you to generate the README.MD file.
+To install this app you will need to run NPM install for the following dependencies in your CLI: Inquirer,fs, and util. This will allow the question prompts from the CLI for you to generate the README.MD file.
 
 ## Usage:
 https://watch.screencastify.com/v/Fth9K32Cunr2beXSAFWx
