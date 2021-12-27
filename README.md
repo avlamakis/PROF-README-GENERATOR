@@ -1,7 +1,7 @@
 # ReadMe Generator
 
 ## Licensing
-badge
+![badge](https://img.shields.io/badge/license-MIT-brightorange)
 
 ## Table of Contents
   - [Description](#description)
