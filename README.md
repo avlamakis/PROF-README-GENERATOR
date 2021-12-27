@@ -33,11 +33,14 @@ MIT
 Made by myself Alexandros Vlamakis. 
 
 Utilized the following links/sources for assistance:
+
 //https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/try...catch 
 
 https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/async_function 
 
-(https://img.shields.io/badge/license-${data.licensing}-brightorange) (https://guides.github.com/features/mastering-markdown/) 
+(https://img.shields.io/badge/license-${data.licensing}-brightorange) 
+
+(https://guides.github.com/features/mastering-markdown/) 
 
 https://choosealicense.com/
 
