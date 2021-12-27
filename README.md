@@ -20,6 +20,10 @@ To install this app you will need to run NPM install for the following dependenc
 ## Usage:
 https://watch.screencastify.com/v/Fth9K32Cunr2beXSAFWx
 
+## Screenshot
+![image](https://user-images.githubusercontent.com/91172337/147423235-24403bfe-4b92-48ec-bdec-f330136d5563.png)
+
+
 ## License:
 MIT
 
